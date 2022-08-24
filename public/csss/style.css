@@ -1,0 +1,281 @@
+:root {
+  --color-primary: #fdec02;
+  --color-white:#fcfbf7 ;
+  --color-black: #04a0bb;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  /* color: var(--color-white);
+  font-size: 30px; */
+width: auto;
+height: 100px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 18px;
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: cooper;
+  transition: all 0.3s;
+}
+
+ .menu-bar ul li a:hover {
+  color: var(--color-primary);
+ 
+} 
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+ z-index: 1;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 200px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+
+#container{
+  margin: 5% !important;
+  
+
+}
+#conteneur{
+margin: 5%;
+}
+
+
+
+
+.gabarie2{
+	margin-left: 10%;
+}
+.partenaire{
+	background-color: #fdec02;
+
+}
+/* #marge{
+	margin-left: 10% !important; 
+} */
+.image3{
+	/* height: 100px !important; */
+object-fit: cover!important;
+}
+/* //footer// */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+} */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+#tree{
+  justify-content: space-between !important;
+}
+.public{
+  margin-left: 10%;
+  background-color: #fdec02;
+  border-radius: 5%;
+  width: 30%;
+  height: 10%;
+  
+}
+/* .public ,h3,i{
+margin-bottom: 10%;
+} */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #04a0bb;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 25px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #f8fc07;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #f8fc07;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.fin{
+  background-color: #fdec02;
+  border-radius: 20px;
+  width: 60%;
+  height: 20%;
+}
+
+/* //....................... */
+
+
+/* .bouge{
+  margin-bottom: 20%;
+ 
+} */
+ .etude{
+  background-color: #fdec02;
+  border-radius: 5%;
+  width: 70%;
+  height: 10%;
+ 
+}
+#rappel{
+display: block;
+
+} 
+.barrage{
+  background-color: #fdec02;
+  border-radius: 5%;
+  width: 25%;
+  height: 10%;
+}
