@@ -1,49 +1,81 @@
 @extends('layout.navbar')
 @section('content') <br>
-<div class="public"> <h3> <strong> <i> REALISATION</h3></strong></i></div>
+
+     <center><div class="reali">   <h3> REALISATION </h3> </div> </center>
 
 
-<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center " uk-grid>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/realisation1.jpg')}}" alt=""></div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/realisation2.jpeg')}}" alt=""></div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/realisation3.jpg')}}" alt=""></div>
-        </div>
+
+    <div class="uk-slider-container-offset" uk-slider id="conteneur">
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{asset('image/realisation1.jpg')}}" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{asset('image/realisation2.jpeg')}}" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{asset('image/realisation3.jpg')}}" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{asset('image/afriklonny.jpeg')}}" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{asset('image/slide4.jpg')}}" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Headline</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
     </div>
-    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/afriklonny.jpeg')}}" alt=""></div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/slide4.jpg')}}" alt=""></div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-card-body"><img src="{{asset('image/realisation3.jpg')}}" alt=""></div>
-        </div>
-    </div>
-    <div class="uk-height-medium" id="conteneur">
-    <div class="js-wrapper">
 
-    <center> <h2>  <strong>  Autre réalisation </strong></h2></center>
+    <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
 
-        <div uk-overflow-auto="selContainer: .uk-height-medium; selContent: .js-wrapper">
-            <div class="uk-grid-small" uk-grid>
-                <div class="uk-width-1-2"><img src="{{asset('image/reali3.jpg')}}" width="1800" height="1200" alt=""></div>
-                <div class="uk-width-1-2"><img src="{{asset('image/reali2.jpg')}}" width="1800" height="1200" alt=""></div>
-                <div class="uk-width-1-2"><img src="{{asset('image/reali.jpg')}}" width="1800" height="1200" alt=""></div>
-                <div class="uk-width-1-2"><img src="{{asset('image/slide4.jpg')}}" width="1800" height="1200" alt=""></div>
-            </div>
-        </div>
+</div>
 
-       
-
-    </div>
-   
-</div> <br>
    <center> <h2>  <strong>  Notre Equipe </strong></h2></center>
 
 <div class="uk-flex uk-flex-center">

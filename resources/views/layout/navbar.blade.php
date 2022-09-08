@@ -13,27 +13,27 @@
 <div class="menu-bar">
          <img src="{{asset('image/logo/logo.PNG')}}" alt="" class="logo">
         <ul>
-            <li><a href="#">ACCUIEL</a></li>
-            <li><a href="#">DOMAINE D'ACTIVITE <i class="fas fa-caret-down"></i></a>
+            <li><a href="{{url('accueil')}}">ACCUEIL</a></li>
+            <li><a href="{{url('service')}}">DOMAINE D'ACTIVITE <i class="fas fa-caret-down"></i></a>
 
                 <div class="dropdown-menu">
                     <ul>
-                        <li><a href="#">BATIMENTS</a></li>
-                        <li><a href="#">INFORMATIQUES</a></li>
-                        <li><a href="#">ETUDES</a></li>
-                        <li><a href="#">BARRAGES</a></li>
-                        <li><a href="#">AMENAGEMENTS</a></li>
-                        <li><a href="#">DEVELOPPEMENTS</a></li>
-                        <li><a href="#">COLLECTS</a></li>
-                        <li><a href="#">FORMATIONS</a></li>
-                        <li><a href="#">ACCOMPAGEMENTS</a></li>
-                        <li><a href="#">CONSEILS</a></li>
+                        <li><a href="{{url('service')}}">BATIMENTS</a></li>
+                        <li><a href="{{url('informatique')}}">INFORMATIQUES</a></li>
+                        <li><a href="{{url('etude')}}">ETUDES</a></li>
+                        <li><a href="{{url('barrage')}}">BARRAGES</a></li>
+                        <li><a href="{{url('amenagement')}}">AMENAGEMENTS</a></li>
+                        <li><a href="{{url('developpement')}}">ENERGIE<a></li>
+                        <li><a href="{{url('collect')}}">COLLECTS</a></li>
+                        <li><a href="{{url('formation')}}">FORMATIONS</a></li>
+                        <li><a href="{{url('accompagner')}}">ACCOMPAGNEMENTS</a></li>
+                        <li><a href="{{url('conseil')}}">CONSEILS</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#">REALISATION</a>
+            <li><a href="{{url('realisation')}}">REALISATION</a>
             </li>
-            <li><a href="#">CONTACTS</a></li>
+            <li><a href="{{url('contact')}}">CONTACTS</a></li>
         </ul>
     </div>
  @yield('content')
@@ -45,7 +45,7 @@
   	 		<div class="footer-col">
   	 			<h4>Nos Contacts</h4>
   	 			<ul>
-  	 				<li><a href="#"></a></li>
+  	 				<li><a href="#">(+226):70449598</a></li>
   	 				<li><a href="#"></a></li>
   	 				<li><a href="#"></a></li>
   	 				<li><a href="#"></a></li>
